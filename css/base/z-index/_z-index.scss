@@ -1,0 +1,11 @@
+$z-layers: (
+	"mobile":		900,
+	"nav":			300,
+	"default":		0,
+	"back":			-1
+);
+
+
+@function z($layer) {
+  @return map-get($z-layers, $layer);
+}
