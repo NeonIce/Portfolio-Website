@@ -1,0 +1,45 @@
+.section-contact {
+	
+	
+	.header {
+		
+		.name {
+			font-size: $font-size-body * 4;
+			
+			@media #{$tablet} {
+				font-size: $font-size-body * 6;
+			}
+		}
+	}
+	
+	
+	.contact {
+		color: $color-primary;
+		font-size: $font-size-body * 1.25;
+		text-align: center;
+		padding: $block-padding;
+		
+		
+		.container {
+			max-width: $max-width - 400;
+		}
+
+
+		.why-not {
+			padding-bottom: 0;
+		}
+		
+		
+		.email {
+			color: $color-primary;
+			font-size: $font-size-body * 2;
+			@extend %link-underline;
+			
+			&:hover {
+				color: $color-secondary;
+			}
+		}
+
+	}
+		
+}
