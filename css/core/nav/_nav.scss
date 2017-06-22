@@ -1,0 +1,75 @@
+.nav {
+	display: block;
+	position: $nav-position;
+	top: 0;
+	background: $nav-bg;
+	width: 100%;
+	height: $nav-height;
+	padding: ($block-padding / 3) $block-padding;
+	box-shadow: $nav-shadow;
+	z-index: z("nav");
+	
+	.inner {
+		position: relative;
+		@extend %max-width;
+		@extend %clear-fix;
+	}
+	
+	
+	.logo-badge {
+		width: $nav-badge;
+		height: $nav-badge;
+		@extend %transition;
+		
+		&:hover {
+			opacity: 0.7;
+			@extend %transition;
+		}
+	}
+	
+	
+	.left {
+		float: left;
+	}
+	
+	
+	.right {
+		display: block;
+		float: right;
+		width: auto;
+		@include centreR;
+		
+		.menu {
+			@extend %hidden;
+			
+			@media #{$tablet} {
+				display: block;
+			}
+		}
+
+
+		// link setup
+		a {
+			color: $color-secondary-dark;
+			@extend %link-underline;			
+			
+			&:hover {
+				color: $color-primary-light;
+			}
+		}
+
+	} // end .right
+	
+	
+		
+	li {
+		float: left;
+		margin-left: $block-padding;
+		
+		&:first-of-type {
+			margin-left: 0;
+		}
+	}
+	
+	
+}
