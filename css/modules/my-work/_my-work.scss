@@ -1,0 +1,92 @@
+.section-my-work {
+	
+	// page header
+	.header {
+		background: $color-white;
+		box-shadow: none;
+		
+
+		.intro {
+			color: $color-primary;
+			text-align: center;
+			max-width: $max-width - 400;
+			
+
+			h1 {
+				font-size: $font-size-body * 2.5;
+				
+				@media #{$tablet} {
+					font-size: $font-size-body * 6;
+				}
+			}
+			
+
+			p {
+				color: $color-black;
+				font-size: $font-size-body * 1.25;
+			}
+
+		}
+	}
+	
+	
+	.wrapper {
+		background: $color-primary;
+		
+		
+		.my-work {
+			padding: $block-padding;
+		}
+
+	}
+	
+	
+	.work-grid {
+		@extend %clear-fix;
+		
+		
+		.item {
+			position: relative;
+			float: left;
+			padding: $block-padding;
+			margin: $block-padding 0;
+			background: $color-white;
+			
+			@media #{$tablet} {
+				width: 47.5%;
+				padding: $block-padding;
+				margin-right: 2.5%;
+				
+				&:nth-of-type(even) {
+					margin-right: 0;
+					margin-left: 2.5%;
+				}
+			}
+			
+			&.light {
+				background: $portfolio-even-light;
+
+				&:hover {
+					background: rgba($color-white, 0.6);
+				}
+			}
+			
+			&.dark {
+				background: $portfolio-odd;
+
+				&:hover {
+					background: rgba($color-black, 0.6);
+				}
+			}
+			
+		}
+		
+		
+		.item-preview{
+			width: 100%;
+			max-width: 600px;			
+		}
+		
+	}
+	
+}
