@@ -1,0 +1,157 @@
+//==========  Fonts  ==========//
+
+@font-face {
+    font-family: 'cabin';
+    src: url('fonts/cabin.eot');
+    src: url('fonts/cabin.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cabin.woff') format('woff'),
+         url('fonts/cabin.ttf') format('truetype'),
+         url('fonts/cabin.svg#cabin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'journal';
+    src: url('fonts/journal.eot');
+    src: url('fonts/journal.eot?#iefix') format('embedded-opentype'),
+         url('fonts/journal.woff') format('woff'),
+         url('fonts/journal.ttf') format('truetype'),
+         url('fonts/journal.svg#journal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+$font-family: "cabin", "Lucida Grande", "Helvetica", sans-serif;
+
+$font-family-writing: "journal", "Lucida Grande", "Helvetica", sans-serif;
+
+$font-size: 1.2rem;
+
+
+//=========  Font setup  =========//
+
+// Font sizes
+$site-title: 4rem;
+$site-subtitle: 1.6rem;
+
+
+
+// Font weights
+$font-normal:	400;
+$font-bold: 	500;
+$font-thick:	600;
+$font-heavy:	800;
+
+
+// ========= HTML & Body =========//
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: $font-family;
+	font-size: $font-size;
+	color: $color-black;
+}
+
+
+
+// ========= Heddings =========//
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	text-align: center;
+	padding-bottom: 0.6rem;
+	margin: 1rem 0 0.6rem;
+}
+
+
+$title-size: 4rem;
+
+$font-size-body: $font-size - 0.1;
+
+
+.h1 {
+	font-size: $title-size;
+	margin-bottom: 0;
+}
+
+
+.h2 {
+	font-size: $title-size / 2;
+}
+
+
+// section styles
+section {
+	
+	h1 {
+		font-size: $font-size-body * 1.6;
+		font-weight: $font-normal;
+	}
+	
+	
+	h2 {
+		color: $color-secondary;
+		font-size: $font-size-body * 2.75;
+		font-weight: $font-normal;
+		padding-top: 1rem;
+	}
+	
+	
+	h3 {
+		color: $color-primary;
+		font-size: $font-size-body * 1.6;
+		font-weight: $font-normal;
+		padding-top: 1rem;
+	}
+	
+	
+	p {
+		line-height: 2;
+		padding-bottom: 1.5rem;
+		
+		&.title {
+			text-align: center;
+		}
+	}
+	
+}
+
+
+// ========= styles =========//
+
+p {
+	line-height: 2;
+}
+
+strong{
+	font-weight: 600;
+}
+
+
+//=========  Link setup  =========//
+
+a {
+	color: $link-colour;
+	font-weight: $font-bold;
+	text-decoration: none;
+	transition: all ease-out 0.3s;
+
+	
+	&:hover {
+		color: $link-hover;
+		text-decoration: none;
+	}
+}
+
+//==========  Borders  ==========//
+
+$border: 2px solid $color-midgrey;
+
+$border-radius-outer: 10px;			//Border radius for wrapper block
+
+$border-radius-inner: 6px;			//Border radius for inner elements
