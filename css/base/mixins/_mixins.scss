@@ -1,0 +1,49 @@
+// centrally align elements
+
+
+//align centre
+@mixin centre {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+
+//align middle left
+@mixin centreL {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0, -50%);
+}
+
+// align middle right
+@mixin centreR {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0, -50%);
+}
+
+
+// align nav to top
+@mixin centreNav {
+	position: absolute;
+	top: $nav-height;
+	left: 50%;
+	transform: translate(-50%, -($nav-height));
+}
+
+
+
+// create offset on anchors
+
+@mixin offset {
+	&:target::before {
+		content:"";
+		display:block;
+		height: $nav-height;		/* fixed header height*/
+		margin: -($nav-height) 0 0;	/* negative fixed header height */
+	}	
+}
