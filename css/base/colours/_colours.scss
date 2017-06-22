@@ -1,0 +1,63 @@
+//==========  Colors  ==========//
+
+$color-primary: 		#0274F6; 						// the brand colour
+$color-primary-light: 	lighten($color-primary, 5%);	// the brand colour - lighter
+$color-primary-dark: 	darken($color-primary, 5%);		// the brand colour - darker
+
+$color-secondary: 		#3232BE; 					  	// the accent colour
+$color-secondary-light: lighten($color-secondary, 5%);	// the accent colour - lighter
+$color-secondary-dark:  darken($color-secondary, 5%);	// the accent colour - darker
+
+$color-background:		$color-primary; //#326EFF;		// Main overall background colour for site
+
+
+$portfolio-odd: 		#292929; 						// first portfolio item
+$portfolio-odd-light:	lighten($portfolio-odd, 20%);	// first portfolio item - lighter
+$portfolio-odd-dark:	darken($portfolio-odd, 20%);	// first portfolio item - darker
+
+
+$portfolio-even: 		$color-primary; 				// second portfolio item
+$portfolio-even-light:	lighten($portfolio-even, 20%);	// first portfolio item - lighter
+$portfolio-even-dark:	darken($portfolio-even, 20%);	// first portfolio item - darker
+
+
+//==========  Tones  ==========//
+
+$color-lightgrey: 		#eee;	 				       // a default light grey
+$color-lightgrey-light: lighten($color-lightgrey, 5%); // a default light grey - lighter
+$color-lightgrey-dark:  darken($color-lightgrey, 5%);  // a default light grey - darker
+
+$color-midgrey: 		#bbb;	 				       // a default mid grey
+$color-midgrey-light: 	lighten($color-midgrey, 5%);   // a default mid grey - lighter
+$color-midgrey-dark:  	darken($color-midgrey, 5%);    // a default mid grey - darker
+
+$color-darkgrey:		#85898a; 				       // a default dark grey
+$color-darkgrey-light:  lighten($color-darkgrey, 5%);  // a default dark grey - lighter
+$color-darkgrey-dark:   darken($color-darkgrey, 5%);   // a default dark grey - darker
+
+$color-white: #fff;	// a default white
+$color-black: #000;	// a default black
+
+
+$window-elements:		darken($color-darkgrey-dark, 20%);			// colour for window elements (dots and hamburger)
+
+
+//==========  Text  ==========//
+
+$color-text:  #717f81; 		  // body text colour
+$color-sub:   #5d4f4a; 		  // sub and intro text colour
+$color-title: $color-primary; // heading text colour
+
+
+//=========  Link setup  =========//
+
+$link-colour: $color-white;
+
+$link-hover: #00DDFF;
+
+
+//==========  Footer  ==========//
+
+$footer-color: $color-background;
+
+$footer-font: #989898;
