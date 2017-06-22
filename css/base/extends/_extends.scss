@@ -1,0 +1,72 @@
+// extend functions
+
+
+// set max-width defaults
+%max-width {
+	width: 100%;
+	max-width: $max-width;
+	margin: $margin-auto;
+}
+
+
+// hide elements
+%hidden{
+	display: none;
+}
+
+
+// fix floating elements inside a parent block
+%clear-fix{
+	&::before, &::after {
+		content: ".";
+		display: block;
+		height: 0;
+		overflow: hidden;
+	}
+	&::after {
+		clear: both;
+	}
+
+    zoom: 1; /* IE < 8 */
+}
+
+
+// set fade in/out transition on elements
+%transition {
+	transition: all ease-in-out 0.2s;
+}
+
+
+// set underline on links
+%link-underline {
+	position: relative;
+	
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		background-color: $color-primary-light;
+		visibility: hidden;
+		-webkit-transform: scaleX(0);
+		transform: scaleX(0);
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		transition: all 0.3s ease-in-out 0s;
+	}
+	
+	
+	&:hover {
+		
+		
+		&::before {
+			visibility: visible;
+			-webkit-transform: scaleX(1);
+			transform: scaleX(1);
+		}
+	}
+
+}
+
+
