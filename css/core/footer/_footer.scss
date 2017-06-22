@@ -1,0 +1,53 @@
+footer{
+	background: $color-white;
+	color: $color-secondary;
+	box-shadow: 0 -10px 10px -10px rgba(0,0,0,0.5);
+	padding: $block-padding;
+	margin: 0;
+	@extend %clear-fix;
+	
+
+	p {
+		text-align: center;
+		padding-bottom: $block-padding;
+		
+		&.work-together,
+		&.get-in-touch,		
+		&:last-of-type {
+			padding-bottom: 0;
+		}
+	}
+	
+	
+	.work-together {
+		font-size: $font-size-body * 1.5;
+	}
+	
+
+	.thanks {
+		font-family: $font-family-writing;
+		font-size: $font-size * 3;
+		line-height: 1;
+	}
+	
+
+	.email {
+		
+		a {
+			color: $color-secondary;
+			font-size: $font-size * 2;
+			@extend %link-underline;
+			
+			&:hover {
+				color: $color-primary;
+			}
+		}
+	}
+	
+
+	.copyright {
+		font-size: $font-size-body - 0.2;
+	}
+	
+	
+}
