@@ -1,0 +1,54 @@
+//==========  Site structure  ==========//
+
+// the max-width the site will be
+$max-width: 1300px;
+
+// the padding around the body on devices
+// only used up to the max-width viewport
+
+$site-padding: 0;
+
+
+//==========   Nav   ==========//
+
+@mixin calc($property, $expression) { 
+  #{$property}: calc(#{$expression}); 
+} 
+
+
+//========== Padding ==========//
+
+$block-padding: 1.5rem;
+
+
+//========== Margin ==========//
+
+$block-margin: $block-padding * 2;
+
+$margin-auto: 0 auto;
+
+
+//==========  Z-Indexes  ==========//
+
+$nav-height: 80px;
+
+
+//==========  Media Queries  ==========//
+
+// max-width (site) test
+$maxWidth:  "only screen and (min-width : " + em($max-width) + ")"; // $max-width
+
+// min-width tests
+$mobile:    "only screen and (min-width : 25em)";  		//  400px
+$mobileXL:  "only screen and (min-width : 40em)";  		//  640px
+$tablet:    "only screen and (min-width : 50em)";  		//  800px
+$tabletXL:  "only screen and (min-width : 60em)";  		//  960px
+$laptop:    "only screen and (min-width : 80em)";  		// 1280px
+$desktop:   "only screen and (min-width : 100em)"; 		// 1600px
+$desktopXL: "only screen and (min-width : 125em)"; 		// 2000px
+
+// min-height tests
+$mobileH: 	"only screen and (min-height : 20em)";		//  320px
+$tabletH:	"only screen and (min-height : 30em)";		//  480px
+$laptopH:	"only screen and (min-height : 45em)";		//  720px
+$desktopH:	"only screen and (min-height : 57.5em)"; 	//  920px
