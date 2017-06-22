@@ -1,0 +1,83 @@
+.other-work {
+	color: $color-primary;
+	text-align: center;
+	
+	
+	// default text setting
+	p {
+		font-size: $font-size-body * 1.4;
+		padding: 4rem;
+
+		@media #{$tablet} {
+			font-size: $font-size-body * 1.8;
+		}
+		
+	}
+	
+	
+	// other works wrapper
+	.wrapper {
+		position: relative;
+		overflow: hidden;
+		@extend %clear-fix;
+	}
+	
+	
+	.one,
+	.two {
+		display: block;
+		padding: 2rem 2rem 0;
+		position: relative;
+
+		@media #{$tablet} {
+			padding: 2rem 4rem 0;
+		}
+				
+	}
+	
+	
+	// left project item
+	.one {
+		background: $portfolio-odd;
+		transition: 0.5s all ease-in-out;
+		
+		&:hover {
+			background: $portfolio-odd-light;
+			transition: 0.2s all ease-in-out;
+		}
+				
+		
+		@media #{$tablet} {
+			float: left;
+			width: 50%;
+			height: 100%;
+			@include centreL;
+		}
+	}
+	
+	
+	// right project item
+	.two {
+		background: $portfolio-even;
+		transition: 0.5s all ease-in-out;
+		
+		&:hover {
+			background: $portfolio-even-dark;
+			transition: 0.2s all ease-in-out;
+		}
+		
+		@media #{$tablet} {
+			float: right;
+			width: 50%;
+		}
+	}
+	
+	
+	// image settings
+	.other-projects {
+		display: block;
+		width: 100%;
+		margin: $margin-auto;
+	}
+	
+}

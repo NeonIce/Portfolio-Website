@@ -1,0 +1,11 @@
+//==========  Colors  ==========//
+
+$portfolio-odd: 		#292929; 						// first portfolio item
+$portfolio-odd-light:	lighten($portfolio-odd, 20%);	// first portfolio item - lighter
+$portfolio-odd-dark:	darken($portfolio-odd, 20%);	// first portfolio item - darker
+
+
+$portfolio-even: 		$color-primary; 				// second portfolio item
+$portfolio-even-light:	lighten($portfolio-even, 20%);	// first portfolio item - lighter
+$portfolio-even-dark:	darken($portfolio-even, 20%);	// first portfolio item - darker
+

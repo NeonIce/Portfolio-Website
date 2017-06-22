@@ -1,0 +1,130 @@
+.section-portfolio {
+	
+	// page header
+	.header {
+		background: $color-white;
+		box-shadow: none;
+		
+		.site-title {
+			color: $color-primary;
+			text-align: center;
+			
+			h1 {
+				font-size: $font-size-body * 2.5;
+				
+				@media #{$tablet} {
+					font-size: $font-size-body * 3;
+				}
+			}
+			
+			p {
+				color: $color-black;
+				font-size: $font-size-body * 1.25;
+			}
+		}
+	}
+	
+	
+	// preview banner
+	.banner {
+		width: 100%;
+		
+		.mockup {
+			width: 100%;
+			height: auto;
+		}
+	}
+	
+	
+	// full view of work
+	.work {
+		background: $color-primary-dark;
+		padding: $block-padding * 2;
+		@extend %clear-fix;
+		
+		
+		.description {
+			max-width: $max-width - 400;
+			text-align: center;
+			padding-bottom: $block-padding;
+			margin: $margin-auto;
+			
+			p {
+				margin-bottom: $block-padding;
+				
+				&:first-of-type {
+					font-size: $font-size-body * 1.25;
+				}
+				
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+		
+		
+		.full-view {
+			border-bottom: 1px solid $color-white;
+			padding-bottom: $block-padding;
+			
+			&:last-of-type {
+				border: none;
+				padding: 0;
+			}
+		}
+		
+		
+		.half-view {
+			width: 100%;
+			max-width: 650px;
+			
+			@media #{$tablet} {
+				width: 50%;
+				float: left;
+				padding: 0 2.5%;
+				
+				&:nth-child(even) {
+					float: right;
+				}
+			}
+			
+		}
+				
+
+
+
+		.third-view {
+			width: 100%;
+			max-width: 650px;
+			
+			@media #{$tablet} {
+				width: 50%;
+				float: left;
+				padding: 0 2.5%;
+				
+				&:nth-child(even) {
+					float: right;
+				}
+			}
+			
+			@media #{$laptop} {
+				width: 33%;
+				
+				&:nth-child(even) {
+					float: left;
+				}
+			}
+		}
+				
+		.mockup {
+			width: 100%;
+			max-width: 1300px;
+			z-index: z(default + 1);
+		}
+		
+	}
+	
+	
+	
+}
+
