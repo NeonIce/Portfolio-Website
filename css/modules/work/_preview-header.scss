@@ -1,0 +1,43 @@
+.preview-block {
+	padding: $preview-padding;
+	
+	
+	// header bar
+	.preview-header {
+		width: 100%;
+		height: 50px;
+		background: $color-lightgrey;
+		border-radius: $preview-radius;
+		position: relative;
+		
+		
+		// preview window elements - dots and hamburger
+		.preview-elements {
+			opacity: 0.3;
+			
+			// window dots (close, minimize, fullscreen)
+			&.dots {
+				margin-left: 20px;
+				@include centreL;
+			}
+			
+			// hamburger menu
+			&.hamburger {
+				margin-right: 20px;
+				@include centreR;
+			}
+		}
+		
+		
+		// title for the preview window
+		.preview-title {
+			color: $color-darkgrey-dark;
+			padding: 0;
+			@include centre;
+		}
+	}
+	
+	.preview {
+		width: 100%;
+	}
+}

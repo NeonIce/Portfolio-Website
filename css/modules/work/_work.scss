@@ -1,0 +1,65 @@
+.work {
+	@include offset;
+	
+	.portfolio {
+		padding: $work-padding;
+		margin: 0;
+		
+		&.odd {
+			background: $portfolio-odd;
+			
+			.link a:hover {
+				background: $portfolio-odd-light;
+			}
+		}
+		
+		&.even {
+			background: $portfolio-even;
+			
+			.link a:hover {
+				background: $portfolio-even-dark;
+			}
+		}
+		
+	}
+	
+	
+	.title-block {
+		position: relative;
+		@extend %clear-fix;
+		
+		.title {
+			text-align: center;
+			
+			
+			@media #{$tablet} {
+				text-align: left;
+				padding-left: 2rem;
+			}
+		}
+		
+		
+		.link {
+			text-align: center;
+			margin-top: 2rem;
+			
+			
+			@media #{$tablet} {
+				text-align: left;
+				margin-top: 0;
+				@include centreR;
+			}
+			
+			a {
+				@extend %view-button;
+				
+				&:hover {
+					color: $color-white;
+					@extend %view-button-hover;
+				}
+			}
+		}
+	}
+
+	
+}

@@ -1,0 +1,16 @@
+// extends for portfolio blocks on homepage
+
+
+// view project button
+%view-button {
+	padding: 1rem 2rem;
+	background: transparent;
+	border-radius: $button-radius;
+}
+
+
+// view project button - hover state
+%view-button-hover {
+	padding: 1rem 2rem;
+	border-radius: $button-radius;	
+}
